@@ -1,3 +1,12 @@
+wget (1.20.3-1ubuntu2.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: mishandling of semicolons in userinfo
+    - debian/patches/CVE-2024-38428.patch: properly re-implement userinfo
+      parsing in src/url.c.
+    - CVE-2024-38428
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 Jun 2024 08:19:28 -0400
+
 wget (1.20.3-1ubuntu2) focal; urgency=medium
 
   * Cherry-pick upstream fix fix-ssl_init-for-openssl-1.1.1.patch:
